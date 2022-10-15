@@ -34,3 +34,49 @@
 ---
 
 <img align="center" width="500" height="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOSYeQ6tce8fI2zSlPos1osMg9GybUergPtQ&usqp=CAU">
+
+## _Summary_
+
+1. As soon as the whole javaScript code is run , 'Execution-context' is created or the 'Gobal-execution' context is created
+2. It has two components memory && code => created in two phases
+
+---
+
+## Memory creation phases(1)
+
+- Allocating memory to all variables and functions inside the 'global-space(inside the whole program)'
+- In case of variables undefined assigned
+- In case of functions whole copy of the function
+
+---
+
+## Code execution phase(2)
+
+- replace variable undefined with the value
+- encounter a function(function envocation) => Execution context is created and ones again same process repeat '{(1)(2)}'
+
+  ***
+
+<img width="500" align="center" src="data:image/png;base64,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">
+
+---
+
+## Call Stack:
+
+- Every time in the bottom of the stack have 'Global exection context'
+- whenever js code is run => whole 'Execution context is pushed to the stack'
+- function is envoked => execution context is created => it again pushed to the stack
+- ones functtion is executed it pop out of the stack => control goes to 'Global execution context'
+- ones whole code get executed call stack get empty => global execution context also gone
+- this way we are done with our javaScript program
+- call stack also called by different name:
+
+  - Execution context stack
+  - program stack
+  - control stack
+  - Runtime Stack
+  - machine stack
+
+  ***
+
+## _Call stack maintains the order of execution of execution context_
