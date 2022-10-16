@@ -3,3 +3,4 @@
 | Day   | Description                                                                           |
 | ----- | ------------------------------------------------------------------------------------- |
 | Day-1 | How javaScript works and Execution context ,javaScript code is executed and callStack |
+| Day-2 | Hoisting                                                                              |
