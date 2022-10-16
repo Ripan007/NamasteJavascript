@@ -46,3 +46,53 @@
 
 // undefined
 
+
+// var x = 2;
+// a();
+// b();
+// console.log(x);
+
+// function a() {
+//     var x = 4;
+//     console.log(x);
+// }
+
+// function b() {
+//     var x = 6;
+//     console.log(x);
+// }
+
+// var a = 4;
+// console.log(window.a);
+// console.log(this.a);
+
+// not defined
+// console.log(a);
+
+// undefined;
+// console.log(a);
+// var a= 3;
+
+// function a() {
+//     c();
+//     function c() {
+//         console.log(b);
+//     }
+// }
+// var b = 4;
+// a();
+
+// The Scope Chain, 🔥Scope & Lexical Environment
+// function a() {
+//     var b = 4;
+//     c();
+//     function c() {
+
+//     }
+// }
+
+// a();
+// console.log(b);
+
+// b is notDefined
+
